@@ -18,3 +18,8 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
       specific.avro.reader: true
+
+kafka:
+  topics:
+    userVerification: user_verification_events
+    userCreated: user_created_events
