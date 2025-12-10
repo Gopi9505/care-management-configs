@@ -1,11 +1,11 @@
 spring:
-  config:
-    import:
-      - optional:shared/application-database.yml
-      - optional:shared/application-kafka.yml
-      - optional:shared/application-schema.yml
-      - optional:shared/application-logging.yml
-      - optional:shared/application-jwt.yml
+  profiles:
+    include:
+      - database
+      - kafka
+      - schema
+      - logging
+      - jwt
 
 server:
   port: 9001
